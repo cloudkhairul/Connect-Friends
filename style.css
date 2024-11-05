@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  transition: all 0.3s;
+}
+img{
+  width: 100%;
+}
+body{
+  position: relative;
+  background: url(friends.jpeg);
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+@font-face {
+  font-family: poppins;
+  src: url(Poppins-Regular.ttf);
+}
+input{
+  width: 100%;
+}
+
+#mainSection{
+  backdrop-filter: blur(5px);
+  background: rgba(0,0,0,0.3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  max-height: 90vh;
+  width: 90%;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+main h1{
+  font-family: cursive;
+  font-weight: bold
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+td,th{
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+tr td:nth-child(3),
+tr th:nth-child(3){
+  text-align: right;
+}
+
+
+button.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+
+
+
+figure{
+  max-height: 60vh;
+  overflow: scroll;
+  padding:  0 0.5rem;
+}
+
+
+form{
+  background: white;
+  width: 85%;
+  padding: 1.5rem;
+}
+form input{
+  margin-bottom: 1rem;
+  outline: none;
+  border: 1px solid slategray;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+form input:valid{
+  border-color: seagreen;
+}
+
+
+#floatingOne{
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+  
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  
+}
+
+
+#closeDiv{
+  display: none;
+  
+  width: 100%;
+  text-align: center;
+  
+}
+#closeDiv p{
+  margin: 0 auto;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  color: #fff;
+}
+
+#friendship{
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+
+
+#searchBar{
+  display: none;
+  
+}
+#search{
+  outline: none;
+  border: 0;
+}
+
+
+
+#loading{
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 20;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loading img{
+  width: 30%;
+}

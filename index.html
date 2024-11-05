@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Connect Friends</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Add Firebase SDKs -->
+<!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
+   -->
+</head>
+
+<body>
+  
+  
+  <!-- Project -->
+  
+  
+  <section id="mainSection">
+    <main>
+      <nav class="py-2 px-3 rounded bg-light mb-3">
+        <h1>Connect With Friends</h1>
+        <button id="navBtn" class="btn btn-primary"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+      
+      <!-- Search Input -->
+      <div id="searchBar" class="rounded bg-light p-2">
+        <input type="text" id="search" onkeypress="searchContacts()" placeholder="Search by name or number">
+        <button id="searchBtn" class="btn  h-100"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      
+      <figure class="my-3 bg-light rounded">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Mobile</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="contactTableBody">
+            
+          </tbody>
+        </table>
+      </figure>
+      
+      <div>
+        <button id="addBtn" class="btn btn-primary w-100">Add Another</button>
+      </div>
+    </main>
+  </section>
+  
+  
+  
+  <section id="floatingOne">
+    <div id="friendship" class="rounded">
+      <img src="friendship.png" alt="friendship.png">
+    </div>
+    <form id="contactForm" class="rounded">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="number" placeholder="Number" required>
+      <button type="submit" id="submitBtn" class="btn btn-primary w-100">Add</button>
+    </form>
+     <div id="closeDiv">
+    <p id="closeForm" class="bg-danger"><i class="fa-solid fa-xmark"></i></p>
+  </div>
+  </section>
+  
+  <section id="loading">
+    <img src="loading.gif" alt="">
+  </section>
+  
+ 
+  
+  
+  
+  
+
+  
+  
+
+  <script type="module" src="main.js"></script>
+  <!-- <script src="firebase.js"></script> -->
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/32cb0b85cb.js" crossorigin="anonymous"></script>
+</body>
+</html>
